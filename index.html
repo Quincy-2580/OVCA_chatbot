@@ -1,4 +1,6 @@
+# Update the HTML chatbot to include the contact info at the bottom
 
+updated_chatbot_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +49,15 @@
     .chat-options button:hover {
       background-color: #004d40;
     }
+    .chat-footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .chat-footer b {
+      display: block;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
@@ -58,6 +69,18 @@
       <button onclick="alert('Inquiries page coming soon!')">❓ Inquiries</button>
       <button onclick="alert('Video tutorials coming soon!')">🎥 Videos</button>
     </div>
+    <div class="chat-footer">
+      📞 <b>Tel. #: (082) 293 0258</b>
+      📧 <b>Email: ovca.upmindanao@up.edu.ph</b>
+    </div>
   </div>
 </body>
 </html>
+"""
+
+# Save updated file
+updated_file_path = "/mnt/data/index.html"
+with open(updated_file_path, "w") as f:
+    f.write(updated_chatbot_html)
+
+updated_file_path
