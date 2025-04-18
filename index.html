@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OVCA Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chatbot {
+      width: 400px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .chat-header {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .chat-body {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .chat-options button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #00695c;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .chat-options button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbot">
+    <div class="chat-header">👋 Hi! I'm the OVCA Assistant</div>
+    <div class="chat-body">How can I help you today?</div>
+    <div class="chat-options">
+      <button onclick="window.open('https://upmin-ovca.up.edu.ph/resources/downloads', '_blank')">📄 Forms</button>
+      <button onclick="alert('Inquiries page coming soon!')">❓ Inquiries</button>
+      <button onclick="alert('Video tutorials coming soon!')">🎥 Videos</button>
+    </div>
+  </div>
+</body>
+</html>
